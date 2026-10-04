@@ -1,0 +1,13 @@
+{
+  "nome": "Consultoria Vértice (exemplo fictício)",
+  "idioma": "pt-BR",
+  "cores": { "fundo": "#111827", "destaque": "#F59E0B", "secundaria": "#93C5FD", "terciaria": "#34D399", "texto": "#F9FAFB" },
+  "fontes": { "titulo": "Montserrat", "corpo": "Inter", "peso_titulo": "ExtraBold" },
+  "legenda": { "estilo": "karaoke", "palavras_por_tela": 4, "tamanho": 84, "posicao_vertical": 0.78, "contorno": 6, "caixa_alta": true, "cor_ativa": "destaque" },
+  "logo": { "arquivo": "assets/imagens/logo.png", "posicao": "superior-direito", "opacidade": 0.6, "largura_pct": 0.08 },
+  "palavras_destaque": ["processo", "resultado", "margem", "caixa"],
+  "vocabulario": { "evitar": ["garantido", "fácil", "rápido demais"], "preferir": {} },
+  "regras": { "sem_botao_cta_na_tela": true, "zona_segura_pct": 0.10 },
+  "padroes": { "formato": "9:16", "ritmo": "dinamico", "estilo": "moderno", "cor": "natural", "cortar_silencios": "agressivo", "efeitos_sonoros": "cortes-e-zooms", "trilha": "sem-musica" },
+  "notas": "Exemplo fictício de consultoria B2B. Tom direto e técnico."
+}

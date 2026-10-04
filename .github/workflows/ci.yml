@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Testes rápidos (sem dependências)
+        run: |
+          python -m unittest discover tests
+          python -m py_compile skills/editor-de-video-ia/scripts/*.py install.py
+      - name: Instalar ambiente e rodar teste de fumaça
+        run: |
+          python install.py --sem-copia
+          python skills/editor-de-video-ia/scripts/rodar.py teste

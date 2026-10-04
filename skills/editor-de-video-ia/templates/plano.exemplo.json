@@ -1,0 +1,38 @@
+{
+  "titulo": "meu-primeiro-video",
+  "formato": "9:16",
+  "cortes": [[0.0, 12.4], [12.9, 30.0]],
+  "legendas": { "ativa": true },
+  "zoom": {
+    "deriva": 0.05,
+    "punches": [
+      { "t": 4.2 },
+      { "t": 15.0, "alvo": 1.14 }
+    ]
+  },
+  "cards": [
+    {
+      "tipo": "titulo",
+      "t0": 2.0, "t1": 6.0,
+      "rotulo": "PLANO DE AÇÃO",
+      "titulo": [["IA ", true], ["NO SEU NEGÓCIO", false]],
+      "sub": "onde entra hoje"
+    },
+    {
+      "tipo": "lista",
+      "t0": 8.0, "t1": 12.0,
+      "rotulo": "VOCÊ GANHA",
+      "itens": [["Menos retrabalho", 8.5], ["Processos rápidos", 9.8], ["Horas de volta", 11.0]]
+    }
+  ],
+  "inserts": [],
+  "sfx": [
+    { "t": 2.0, "som": "pop-whoosh-leve", "pico_db": -13 },
+    { "t": 4.2, "som": "pop", "pico_db": -16 },
+    { "t": 8.5, "som": "click", "pico_db": -19 }
+  ],
+  "audio": { "lufs": -16, "highpass": 80, "compressor": true },
+  "cor": "natural",
+  "vinheta": false,
+  "fade_out": 0.3
+}

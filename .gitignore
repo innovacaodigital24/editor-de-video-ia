@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+# Trabalho e entregas de projetos de vídeo (nunca versionar vídeos)
+saida/
+prontos/
+assets/videos/
+assets/imagens/
+assets/referencias/
+*.mov
+*.MOV
+*.mp4
+*.wav
+*.mp3
+# Marcas pessoais
+marca.json
+plano.json
+.env
+*.key

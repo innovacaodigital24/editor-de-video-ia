@@ -1,0 +1,8 @@
+numpy>=1.23
+scipy>=1.9
+opencv-python-headless>=4.8
+pillow>=9.5
+soundfile>=0.12
+faster-whisper>=1.0
+scenedetect>=0.6
+static-ffmpeg>=2.5

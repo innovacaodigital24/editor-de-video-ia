@@ -1,0 +1,51 @@
+{
+  "aviso": "Estes são apenas links e identificadores. Nenhum arquivo de som é distribuído neste repositório. Cada pessoa baixa os sons direto da fonte, para uso próprio, aceitando a licença da fonte.",
+  "mixkit": {
+    "licenca": "Mixkit Sound Effects Free License",
+    "licenca_url": "https://mixkit.co/license/#sfxFree",
+    "resumo": "Pode ser usado em vídeos de YouTube e redes sociais e em projetos comerciais. Não pode ser redistribuído isoladamente, dentro de uma ferramenta ou template, nem com arquivos-fonte, e não pode ser registrado como seu. Confira o texto atual na página da licença.",
+    "url_modelo": "https://assets.mixkit.co/active_storage/sfx/{id}/{id}-preview.mp3",
+    "sons": [
+      {"categoria": "mouse-click", "nome": "mouse-click-duplo", "id": 275},
+      {"categoria": "mouse-click", "nome": "mouse-click-fechar", "id": 1113},
+      {"categoria": "mouse-click", "nome": "botao-leve", "id": 2580},
+      {"categoria": "click", "nome": "select-click", "id": 1109},
+      {"categoria": "click", "nome": "click-classico", "id": 1117},
+      {"categoria": "click", "nome": "click-interface", "id": 2568},
+      {"categoria": "click", "nome": "click-tech", "id": 3124},
+      {"categoria": "click", "nome": "click-scifi", "id": 900},
+      {"categoria": "pop", "nome": "pop-longo", "id": 2358},
+      {"categoria": "pop", "nome": "pop-seco-click", "id": 2364},
+      {"categoria": "pop", "nome": "pop-mensagem", "id": 2354},
+      {"categoria": "pop", "nome": "pop-seco-alerta", "id": 2356},
+      {"categoria": "pop", "nome": "pop-bolha", "id": 2357},
+      {"categoria": "pop-whoosh", "nome": "pop-whoosh-leve", "id": 3005},
+      {"categoria": "bell", "nome": "bell-notificacao", "id": 933},
+      {"categoria": "bell", "nome": "bell-conquista", "id": 600},
+      {"categoria": "bell", "nome": "bell-servico", "id": 931},
+      {"categoria": "bell", "nome": "bell-feliz", "id": 937},
+      {"categoria": "bell", "nome": "bell-suave", "id": 3109},
+      {"categoria": "whoosh", "nome": "whoosh-rapido", "id": 1490},
+      {"categoria": "whoosh", "nome": "whoosh-ar", "id": 1489},
+      {"categoria": "whoosh", "nome": "whoosh-cinematico-rapido", "id": 1492},
+      {"categoria": "whoosh", "nome": "whoosh-seta", "id": 1491},
+      {"categoria": "whoosh", "nome": "sweep-pequeno", "id": 166},
+      {"categoria": "whoosh", "nome": "whoosh-vacuo", "id": 1465},
+      {"categoria": "impact", "nome": "impact-grande", "id": 788},
+      {"categoria": "impact", "nome": "impact-whoosh-profundo", "id": 1143},
+      {"categoria": "riser", "nome": "reverse-impact", "id": 784},
+      {"categoria": "camera", "nome": "camera-shutter", "id": 1133},
+      {"categoria": "camera", "nome": "camera-digital", "id": 1432},
+      {"categoria": "success", "nome": "tom-correto", "id": 2870},
+      {"categoria": "success", "nome": "notificacao-positiva", "id": 951},
+      {"categoria": "success", "nome": "confirmacao", "id": 2867},
+      {"categoria": "typing", "nome": "digitando-laptop", "id": 2531}
+    ]
+  },
+  "wikimedia": {
+    "licenca": "Domínio público",
+    "arquivo": "Finger clicks.ogg (autor: cori)",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Finger_clicks.ogg",
+    "categoria": "snap"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "editor-de-video-ia",
+  "version": "0.1.0",
+  "description": "Edita vídeos curtos de ponta a ponta (Reels, TikTok, Shorts, YouTube) com a identidade visual da sua marca: cortes, legendas karaokê, cards, zooms, sons e áudio tratado.",
+  "author": { "name": "Débora Diniz", "url": "https://instagram.com/eusoudeboradiniz" },
+  "homepage": "https://github.com/innovacaodigital24/editor-de-video-ia",
+  "repository": "https://github.com/innovacaodigital24/editor-de-video-ia",
+  "license": "MIT",
+  "keywords": ["video", "edicao", "reels", "legendas", "social-media", "ffmpeg", "whisper"]
+}

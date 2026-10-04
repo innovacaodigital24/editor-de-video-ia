@@ -1,0 +1,11 @@
+{
+  "name": "editor-de-video-ia",
+  "owner": { "name": "Débora Diniz" },
+  "plugins": [
+    {
+      "name": "editor-de-video-ia",
+      "source": "./",
+      "description": "Editor de vídeo com IA e a identidade visual da sua marca."
+    }
+  ]
+}
