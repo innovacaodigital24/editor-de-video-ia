@@ -27,7 +27,7 @@ Em paralelo, o áudio original é cortado nos mesmos trechos, tratado (highpass,
 
 ## Decisões de projeto
 
-- **Local primeiro:** nada vai para a nuvem. A transcrição usa o modelo Whisper no seu computador.
+- **Local primeiro:** edição, transcrição (modelo Whisper) e render rodam no seu computador, sem serviço de edição na nuvem. A exceção é o assistente: ele lê a transcrição e olha alguns quadros para conferir o resultado, e isso passa pela IA.
 - **Plano antes do render:** você vê e aprova o que será feito. O plano é um arquivo, então é reproduzível e ajustável (v2, v3).
 - **Regras viram código:** o que é regra da marca (sem botão de CTA, vocabulário a evitar, contraste) é verificado pelo `validar`, não só "lembrado" pelo assistente.
 - **Licença é requisito:** nenhum arquivo de terceiros é distribuído; sons livres são baixados por quem usa; sintéticos são gerados localmente.

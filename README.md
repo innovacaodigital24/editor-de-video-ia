@@ -30,7 +30,7 @@ Criada por **Débora Diniz** ([@eusoudeboradiniz](https://instagram.com/eusoudeb
    cenas, cortes sugeridos   marca.json (suas cores, fontes e regras)
 ```
 
-Tudo roda **no seu computador**: o ffmpeg, a transcrição (Whisper) e o render. Seus vídeos não são enviados para nenhum serviço de edição.
+A edição roda **no seu computador**: o ffmpeg, a transcrição (Whisper) e o render. Nenhum serviço de edição na nuvem recebe o seu vídeo. **Atenção:** o Claude lê a transcrição e olha alguns quadros do vídeo para conferir o resultado, então esse conteúdo passa pela IA. Não use vídeos com dados de clientes, pacientes ou terceiros sem autorização.
 
 ## Requisitos
 

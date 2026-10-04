@@ -78,7 +78,7 @@ Diga: **"Edita esse vídeo, mesmo estilo do último, confia, manda ver."** Ele u
 
 | Pergunta | Resposta |
 |---|---|
-| Meu vídeo sai da minha máquina? | Não. Edição, transcrição e render rodam no seu computador. |
+| Meu vídeo sai da minha máquina? | O arquivo não vai para nenhum serviço de edição: edição, transcrição e render rodam no seu computador. Mas o Claude lê a transcrição e olha alguns quadros para conferir o resultado, então esse conteúdo passa pela IA. Não use vídeos com dados de terceiros sem autorização. |
 | Posso usar minhas imagens e vídeos? | Sim. Coloque em `assets/imagens` e `assets/videos` e diga onde entram. |
 | Posso colocar música? | Sim, envie o arquivo (precisa ser sua ou de licença livre). O assistente também pode gerar o vídeo sem música. |
 | Deu erro. E agora? | Veja [a tabela de problemas](../skills/editor-de-video-ia/references/solucao-de-problemas.md) ou peça ao próprio assistente: "o que deu errado?". |
