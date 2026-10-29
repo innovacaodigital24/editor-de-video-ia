@@ -1,6 +1,6 @@
 # Editor de Vídeo IA
 
-**Uma skill do Claude Code que edita seus vídeos curtos de ponta a ponta, com a identidade visual da SUA marca.**
+**Uma skill para Claude Code e Codex que edita seus vídeos curtos de ponta a ponta, com a identidade visual da SUA marca.**
 
 Você grava, entrega o vídeo bruto e recebe de volta o MP4 pronto para postar: cortes de silêncio, legendas karaokê palavra por palavra, cards informativos no topo, zooms, efeitos sonoros, áudio tratado e cor. Na primeira vez, o assistente faz uma **entrevista de marca** para aprender suas cores, fontes, tom e regras, e depois todo vídeo sai no seu padrão.
 
@@ -30,11 +30,15 @@ Criada por **Débora Diniz** ([@eusoudeboradiniz](https://instagram.com/eusoudeb
    cenas, cortes sugeridos   marca.json (suas cores, fontes e regras)
 ```
 
-A edição roda **no seu computador**: o ffmpeg, a transcrição (Whisper) e o render. Nenhum serviço de edição na nuvem recebe o seu vídeo. **Atenção:** o Claude lê a transcrição e olha alguns quadros do vídeo para conferir o resultado, então esse conteúdo passa pela IA. Não use vídeos com dados de clientes, pacientes ou terceiros sem autorização.
+A edição roda **no seu computador**: o ffmpeg, a transcrição (Whisper) e o render. Nenhum serviço de edição na nuvem recebe o seu vídeo. **Atenção:** o assistente (Claude ou Codex) lê a transcrição e olha alguns quadros do vídeo para conferir o resultado, então esse conteúdo passa pela IA. Não use vídeos com dados de clientes, pacientes ou terceiros sem autorização.
 
 ## Requisitos
 
-- [Claude Code](https://claude.com/claude-code) (terminal, app de desktop ou extensão de IDE).
+> **Leia antes de instalar.** Esta skill edita o vídeo **no seu computador**, então precisa de um assistente de IA que rode programas na sua máquina. O ChatGPT e o Claude no navegador ou no app de conversa **não fazem isso**.
+
+- **Um destes dois, instalado no computador** (app de desktop ou terminal):
+  - [Claude Code](https://claude.com/claude-code), da Anthropic. Precisa de **plano pago do Claude** (Pro ou superior).
+  - [Codex](https://openai.com/codex), da OpenAI. Precisa de **plano pago do ChatGPT** (Plus ou superior).
 - **Python 3.9 ou mais novo.**
 - Uns 2 GB livres (bibliotecas e modelo de transcrição) e internet na primeira instalação.
 - macOS ou Linux. Windows: ainda não testado (veja [Limitações](#limitações-honestas)).
@@ -49,11 +53,13 @@ cd editor-de-video-ia
 python3 install.py
 ```
 
-O `install.py` copia a skill para `~/.claude/skills/editor-de-video-ia` e instala o ambiente (uns 2 minutos). Pronto.
+O `install.py` instala a skill para os dois assistentes (`~/.claude/skills/editor-de-video-ia` para o Claude Code e `~/.agents/skills/editor-de-video-ia` para o Codex) e prepara o ambiente (uns 2 minutos). Quer só um? `python3 install.py --para claude` ou `python3 install.py --para codex`. Se o Codex já estava aberto, feche e abra de novo.
+
+**Jeito mais fácil:** abra o Claude Code ou o Codex e cole: *"Instala para mim a skill Editor de Vídeo IA deste repositório: https://github.com/innovacaodigital24/editor-de-video-ia. Siga as instruções do README (clonar, rodar o install.py e depois o teste) e me avise quando estiver pronta."*
 
 > **Passo a passo para quem nunca usou terminal:** [docs/PASSO-A-PASSO.md](docs/PASSO-A-PASSO.md)
 
-**Opção B, como plugin** (se a sua versão do Claude Code tiver suporte a plugins): `/plugin marketplace add innovacaodigital24/editor-de-video-ia` e depois `/plugin install editor-de-video-ia`. Depois, rode o ambiente uma vez: `python3 ~/.claude/plugins/.../scripts/rodar.py setup` (a skill avisa o caminho exato).
+**Opção B, como plugin, só no Claude Code** (se a sua versão do Claude Code tiver suporte a plugins): `/plugin marketplace add innovacaodigital24/editor-de-video-ia` e depois `/plugin install editor-de-video-ia`. Depois, rode o ambiente uma vez: `python3 ~/.claude/plugins/.../scripts/rodar.py setup` (a skill avisa o caminho exato).
 
 **Conferir se está tudo certo** (não usa nenhum vídeo seu, leva ~1 minuto):
 
@@ -63,7 +69,7 @@ python3 ~/.claude/skills/editor-de-video-ia/scripts/rodar.py teste
 
 ## Seu primeiro vídeo
 
-1. Crie uma pasta para o projeto e abra o Claude Code nela.
+1. Crie uma pasta para o projeto e abra o Claude Code ou o Codex nela.
 2. Diga: **"Edita esse vídeo"** e anexe o arquivo (ou diga onde ele está).
 3. **Na primeira vez**, o assistente faz a entrevista de marca (20 perguntas numeradas, você responde com números). Pode mandar seu logo, o link do site ou um print do feed para ele sugerir as cores.
 4. Ele analisa o vídeo, faz poucas perguntas e mostra o **plano de edição**.

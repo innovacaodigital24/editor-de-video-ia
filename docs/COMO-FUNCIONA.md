@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-O Claude Code é o "editor": ele conversa com você, decide a edição e escreve um **plano** em JSON. Os scripts Python fazem o trabalho pesado (análise e render). Cada parte tem uma responsabilidade:
+O assistente (Claude Code ou Codex) é o "editor": ele conversa com você, decide a edição e escreve um **plano** em JSON. Os scripts Python fazem o trabalho pesado (análise e render). Cada parte tem uma responsabilidade:
 
 | Parte | O que faz |
 |---|---|

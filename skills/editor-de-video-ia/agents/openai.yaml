@@ -1,0 +1,4 @@
+interface:
+  display_name: "Editor de Vídeo IA"
+  short_description: "Edita vídeos curtos com a identidade visual da sua marca"
+  default_prompt: "Edita esse vídeo"

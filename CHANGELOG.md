@@ -2,6 +2,15 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). Versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.2.0] - 2026-10-29
+
+### Adicionado
+- Suporte ao **Codex** (OpenAI): o `install.py` instala para o Claude Code e para o Codex (`--para claude|codex`), e a skill acha os próprios scripts nas duas pastas.
+- `agents/openai.yaml` com nome e pedido padrão para o Codex.
+
+### Alterado
+- README e passo a passo deixam claros os requisitos: app instalado no computador (Claude Code ou Codex) e plano pago. Não funciona no ChatGPT nem no Claude pelo navegador.
+
 ## [0.1.0] - 2026-10-03
 
 Primeira versão pública.

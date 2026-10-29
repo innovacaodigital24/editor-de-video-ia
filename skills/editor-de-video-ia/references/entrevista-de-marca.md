@@ -5,7 +5,7 @@ Objetivo: gerar o `marca.json` da pessoa para que todo vídeo saia com a identid
 ## Antes de perguntar: tente descobrir sozinho
 - Se a pessoa mandou um **logo, print do site ou do feed**, rode `rodar.py marca-cores imagem.png` e proponha as cores em hex.
 - Se mandou um **link do site ou do Instagram**, use as ferramentas disponíveis (navegador) para olhar as cores, as fontes e o tom. Não afirme o que não viu.
-- Se já existe `CLAUDE.md` ou manual de marca na pasta, leia e use.
+- Se já existe `CLAUDE.md`, `AGENTS.md` ou manual de marca na pasta, leia e use.
 
 ## As perguntas (adapte a ordem ao que já souber)
 

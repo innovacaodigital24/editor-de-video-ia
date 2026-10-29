@@ -4,7 +4,9 @@ Este guia é para quem nunca usou o terminal. Leva uns 15 minutos na primeira ve
 
 ## 1. O que você precisa ter
 
-1. **Claude Code** instalado e funcionando (app de desktop, terminal ou extensão). Se ainda não tem, instale em [claude.com/claude-code](https://claude.com/claude-code) e faça login.
+1. **Claude Code ou Codex instalado no computador** (app de desktop ou terminal) e com login feito. A skill não funciona no ChatGPT nem no Claude pelo navegador, porque edita o vídeo na sua máquina.
+   - **Claude Code:** baixe em [claude.com/claude-code](https://claude.com/claude-code). Precisa de **plano pago do Claude** (Pro ou superior).
+   - **Codex:** baixe em [openai.com/codex](https://openai.com/codex). Precisa de **plano pago do ChatGPT** (Plus ou superior).
 2. **Python 3.9 ou mais novo.**
    - Mac: abra o app **Terminal** e digite `python3 --version`. Se aparecer algo como `Python 3.9.6` ou maior, está ok. Se pedir para instalar as ferramentas de desenvolvedor, aceite.
    - Linux: `python3 --version` (instale pelo gerenciador do seu sistema se faltar).
@@ -27,7 +29,7 @@ cd editor-de-video-ia
 python3 install.py
 ```
 
-Ele copia a skill para o lugar certo e instala tudo o que precisa (uns 2 minutos, com internet). No fim aparece "Pronto".
+Ele coloca a skill no lugar certo para o Claude Code e para o Codex e instala tudo o que precisa (uns 2 minutos, com internet). No fim aparece "Pronto".
 
 Para conferir:
 
@@ -41,7 +43,7 @@ Se aparecer **TESTE OK**, está tudo certo.
 
 Crie uma pasta, por exemplo `Meus Videos`, em qualquer lugar. Dentro dela o assistente vai criar sozinho: `assets/` (seu material), `saida/` (arquivos de trabalho) e `prontos/` (vídeos finais).
 
-Abra o **Claude Code nessa pasta** (no app de desktop, escolha a pasta ao iniciar uma conversa).
+Abra o **Claude Code ou o Codex nessa pasta** (no app de desktop, escolha a pasta ao iniciar uma conversa). Se o Codex já estava aberto durante a instalação, feche e abra de novo.
 
 ## 5. Peça a edição
 
@@ -78,9 +80,10 @@ Diga: **"Edita esse vídeo, mesmo estilo do último, confia, manda ver."** Ele u
 
 | Pergunta | Resposta |
 |---|---|
-| Meu vídeo sai da minha máquina? | O arquivo não vai para nenhum serviço de edição: edição, transcrição e render rodam no seu computador. Mas o Claude lê a transcrição e olha alguns quadros para conferir o resultado, então esse conteúdo passa pela IA. Não use vídeos com dados de terceiros sem autorização. |
+| Meu vídeo sai da minha máquina? | O arquivo não vai para nenhum serviço de edição: edição, transcrição e render rodam no seu computador. Mas o assistente (Claude ou Codex) lê a transcrição e olha alguns quadros para conferir o resultado, então esse conteúdo passa pela IA. Não use vídeos com dados de terceiros sem autorização. |
 | Posso usar minhas imagens e vídeos? | Sim. Coloque em `assets/imagens` e `assets/videos` e diga onde entram. |
 | Posso colocar música? | Sim, envie o arquivo (precisa ser sua ou de licença livre). O assistente também pode gerar o vídeo sem música. |
 | Deu erro. E agora? | Veja [a tabela de problemas](../skills/editor-de-video-ia/references/solucao-de-problemas.md) ou peça ao próprio assistente: "o que deu errado?". |
 | Como atualizo a skill? | `git pull` na pasta do repositório e `python3 install.py` de novo. |
-| Como desinstalo? | Apague `~/.claude/skills/editor-de-video-ia` e `~/.config/editor-de-video-ia`. |
+| Funciona no ChatGPT ou no Claude do navegador? | Não. Precisa do Claude Code ou do Codex instalado no computador, com plano pago. |
+| Como desinstalo? | Apague `~/.claude/skills/editor-de-video-ia`, `~/.agents/skills/editor-de-video-ia` e `~/.config/editor-de-video-ia`. |

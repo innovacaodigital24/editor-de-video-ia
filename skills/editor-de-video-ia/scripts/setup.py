@@ -62,7 +62,7 @@ def main():
     subprocess.check_call([str(py_venv()), "-W", "ignore", str(AQUI / "sfx_sinteticos.py")])
     import json
     (HOME / "config.json").write_text(json.dumps({"python": str(py_venv()), "versao": 1}, indent=2), encoding="utf-8")
-    print("\nPronto. Próximo passo: abra o Claude Code numa pasta de projeto e peça \"edita esse vídeo\".")
+    print("\nPronto. Próximo passo: abra o Claude Code ou o Codex numa pasta de projeto e peça \"edita esse vídeo\".")
 
 
 if __name__ == "__main__":

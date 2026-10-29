@@ -22,7 +22,9 @@ Este arquivo é o roteiro. Os detalhes estão em `references/` (leia só o que o
 | `references/referencias.md` | Quando o usuário trouxer vídeos de referência |
 | `references/solucao-de-problemas.md` | Quando algo falhar |
 
-Todos os comandos usam um único ponto de entrada, a partir da pasta desta skill:
+Funciona no **Claude Code** e no **Codex** (os dois rodam comandos no computador do usuário). No Codex, onde aqui se lê "Claude", entenda "você, o assistente".
+
+Todos os comandos usam um único ponto de entrada, `scripts/rodar.py`, que fica **na pasta desta skill** (onde está este SKILL.md), não na pasta do projeto do usuário. Rode sempre com o caminho completo. Se não souber a pasta, use a primeira que existir: `~/.claude/skills/editor-de-video-ia` (Claude Code), `~/.agents/skills/editor-de-video-ia` (Codex) ou `~/.codex/skills/editor-de-video-ia`. Nos exemplos abaixo, `scripts/rodar.py` é esse caminho completo.
 `python3 scripts/rodar.py <comando> ...` (comandos: `setup`, `analisar`, `validar`, `renderizar`, `marca-cores`, `fonte`, `sfx-baixar`, `sfx-sinteticos`, `sfx-preparar`, `teste`).
 
 ## Regras inegociáveis
